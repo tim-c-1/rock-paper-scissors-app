@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"></meta>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'"></meta>
+        <title>rock-paper-scissors</title> 
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <script src="script.js" defer></script>
+       
+    </head>
+    <body>
+        <div id="menuBar">
+            <div></div>
+            <button id="exit">X</button>
+        </div>
+        <div id="game">
+            <div id="intro">best of five wins the round!</div>
+            <div class="choices">
+                <button id="rock">Rock</button>
+                <button id="paper">Paper</button>
+                <button id="scissors">Scissors</button>
+            </div>
+            <div class="results"></div>
+            <div class="scoreboard">
+                <div class="humanScore"></div>
+                <div class="computerScore"></div>
+            </div>
+            <div class="totals">
+                <table class="totalRoundScore">
+                    <tr>
+                        <th>you</th>
+                        <th>computer</th>
+                    </tr>
+                    <tr>
+                        <td id="humanTotalScore">0</td>
+                        <td id="computerTotalScore">0</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="resetbutton"></div>
+        </div>
+        
+    </body>
+</html>
